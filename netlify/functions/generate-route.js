@@ -24,7 +24,7 @@ exports.handler = (event, context, callback) => {
 
   // prepare a payload to post
   var payload = {
-    'form-name': "routes",
+    'form-name': process.env.ROUTES_FORM_ID,
     'destination': destination,
     'code': code,
     'expires': ""
